@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rusayla Hasan · AI &amp; Data Automation</title>
+<meta name="description" content="Rusayla Hasan builds Python automations and AI workflows that turn messy, manual work into clean systems. AI and data automation, product operations. NYC and remote.">
+<meta name="author" content="Rusayla Hasan">
+<meta name="theme-color" content="#123c3e">
+<link rel="canonical" href="https://rosura04.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rosura04.github.io/">
+<meta property="og:title" content="Rusayla Hasan · AI &amp; Data Automation">
+<meta property="og:description" content="Python and LLM workflows for data and operations. Explore the portfolio as a map, or read the one-page version.">
+<meta property="og:image" content="https://rosura04.github.io/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rusayla Hasan, AI and Data Automation: her portfolio laid out as an explorable map">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rusayla Hasan · AI &amp; Data Automation">
+<meta name="twitter:description" content="I automate messy work. Explore the portfolio as a map, or read the one-page version.">
+<meta name="twitter:image" content="https://rosura04.github.io/og.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link rel="preload" href="hylia-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className = 'js' + (location.hash === '#quick' ? ' mode-quick' : ' mode-map');</script>
+</head>
+<body>
+<a class="skip" href="#quick">Skip to the one-page version</a>
+
+<header class="hud" role="banner">
+  <a class="hud__id" href="#" data-action="home" aria-label="Rusayla Hasan, back to the map">
+    <span class="hud__name">Rusayla Hasan</span>
+    <span class="hud__role">AI and data automation</span>
+  </a>
+  <nav class="hud__tabs" aria-label="Views">
+    <button type="button" class="tab" id="mode-toggle" aria-pressed="false"><span class="key" aria-hidden="true">L</span><span class="when-map">One-page version</span><span class="when-quick">Back to the map</span></button>
+    <span class="tab tab--here" aria-hidden="true"><span class="when-map">Map</span><span class="when-quick">Résumé</span></span>
+    <a class="tab tab--resume" href="resume.pdf" download="Rusayla_Hasan_Resume.pdf"><span class="key" aria-hidden="true">R</span>Resume <span class="pdf">PDF</span></a>
+  </nav>
+</header>
+
+<main id="map-view" class="mapview" aria-label="Map of Rusayla's portfolio">
+  <div class="screen">
+    <div class="stage" id="stage" tabindex="0" aria-describedby="map-help">
+      <svg id="map" class="map" xmlns="http://www.w3.org/2000/svg" role="application" aria-roledescription="explorable map" aria-label="Map with five regions: About, Experience, Projects, Skills and Contact. Tab moves between places, Enter opens one. Arrow keys move the map, plus and minus zoom, P drops a pin.">
+        <defs>
+          <mask id="m-fog" maskUnits="userSpaceOnUse" x="-1200" y="-1200" width="5400" height="4200">
+            <rect x="-1200" y="-1200" width="5400" height="4200" fill="#fff"/>
+            <g id="fog-holes"></g>
+          </mask>
+          <radialGradient id="g-hole"><stop offset=".45" stop-color="#000"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+          <pattern id="p-cloud" width="940" height="864" patternUnits="userSpaceOnUse"><image href="clouds.webp" width="940" height="864" preserveAspectRatio="none"/></pattern>
+          <pattern id="p-cloud2" width="1504" height="1382" patternUnits="userSpaceOnUse" patternTransform="translate(310 190)"><image href="clouds.webp" width="1504" height="1382" preserveAspectRatio="none"/></pattern>
+          <linearGradient id="g-beam" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".35" stop-color="#ffd76a" stop-opacity=".8"/><stop offset="1" stop-color="#ffd76a" stop-opacity="0"/></linearGradient>
+        </defs>
+        <g id="world">
+          <image id="map-img" href="map-1800.webp" x="0" y="0" width="3000" height="1800" preserveAspectRatio="none"/>
+          <g id="fog" mask="url(#m-fog)" class="fog"><rect x="-1200" y="-1200" width="5400" height="4200" fill="url(#p-cloud)"/><rect class="fog__2" x="-1200" y="-1200" width="5400" height="4200" fill="url(#p-cloud2)"/></g>
+          <circle id="sweep" class="sweep" cx="1640" cy="860" r="0"/>
+          <g id="labels" class="labels" aria-hidden="true"></g>
+          <g id="pin-layer" aria-hidden="true"></g>
+          <g id="markers"></g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="side">
+    <section class="intro menu" aria-labelledby="intro-title">
+      <h1 id="intro-title">I automate messy work.</h1>
+      <p>I write Python and LLM workflows that turn manual, scattered tasks into repeatable ones. Each glowing cube on this map is part of my portfolio. Open one to read it, or use the <button type="button" class="linkbtn" data-action="quick">one-page version</button>.</p>
+      <div class="intro__go">
+        <button type="button" class="btn btn--go" data-open="about">Start with About</button>
+        <p class="intro__help" id="map-help">Drag to move, scroll to zoom. Double-click to drop a pin.</p>
+      </div>
+    </section>
+
+    <nav class="legend menu" aria-label="Regions">
+      <h2 class="legend__title">Regions</h2>
+      <ul class="legend__list" id="legend-list">
+        <li><button type="button" data-open="about"><img class="legend__i" src="cube.webp" alt="" width="22" height="24"><span class="legend__t">About</span><span class="legend__d">Who I am, education</span></button></li>
+        <li><button type="button" data-open="experience"><img class="legend__i" src="cube.webp" alt="" width="22" height="24"><span class="legend__t">Experience</span><span class="legend__d">Chargerzilla, Hoda Abayas</span></button></li>
+        <li><button type="button" data-open="fin"><img class="legend__i" src="cube.webp" alt="" width="22" height="24"><span class="legend__t">Projects</span><span class="legend__d">Financial Insights, ClothingDesigner</span></button></li>
+        <li><button type="button" data-open="skills"><img class="legend__i" src="cube.webp" alt="" width="22" height="24"><span class="legend__t">Skills</span><span class="legend__d">Python, SQL, LLMs</span></button></li>
+        <li><button type="button" data-open="contact"><img class="legend__i" src="cube.webp" alt="" width="22" height="24"><span class="legend__t">Contact</span><span class="legend__d">Email, LinkedIn, GitHub</span></button></li>
+      </ul>
+      <button type="button" class="legend__reset" id="fog-reset">Reset the map</button>
+    </nav>
+    </div>
+
+    <div class="zoom" role="group" aria-label="Zoom">
+      <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
+      <button type="button" data-zoom="out" aria-label="Zoom out">&minus;</button>
+      <button type="button" data-zoom="reset" aria-label="Show the whole map">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <footer class="bar" aria-label="Map status and controls">
+    <div class="quest" aria-live="polite">
+      <svg class="wheel" viewBox="0 0 40 40" aria-hidden="true"><g id="wheel-segs"></g></svg>
+      <p><span id="quest-n">0</span>/5 <span class="quest__l">regions found</span></p>
+    </div>
+    <ul class="hints" aria-hidden="true">
+      <li>Move <span class="key key--w">Drag</span></li>
+      <li>Zoom <span class="key key--w">Scroll</span></li>
+      <li>Open <span class="key key--w">Click</span></li>
+      <li>Pin <span class="key key--w">Double-click</span></li>
+    </ul>
+  </footer>
+
+
+  <div class="banner" id="toast" role="status" aria-live="polite" popover="manual" hidden></div>
+</main>
+
+<dialog class="slate" id="slate" aria-labelledby="slate-title">
+  <div class="slate__chrome">
+    <header class="slate__head">
+      <img class="slate__eye" src="cube.webp" alt="" width="30" height="33">
+      <p class="slate__region" id="slate-region"></p>
+      <h2 class="slate__title" id="slate-title" tabindex="-1"></h2>
+      <button type="button" class="slate__close" id="slate-close" aria-label="Close and go back to the map">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </header>
+    <div class="slate__body" id="slate-body"></div>
+    <footer class="slate__foot">
+      <button type="button" class="slate__nav" id="slate-prev"><span aria-hidden="true">&larr;</span> <span class="slate__navlabel"></span></button>
+      <a class="btn btn--go slate__resume" href="resume.pdf" download="Rusayla_Hasan_Resume.pdf">Resume <span class="pdf">PDF</span></a>
+      <button type="button" class="slate__nav slate__nav--next" id="slate-next"><span class="slate__navlabel"></span> <span aria-hidden="true">&rarr;</span></button>
+    </footer>
+  </div>
+</dialog>
+
+<template id="tpl-about">
+  <div class="prose">
+    <p class="lead">I&rsquo;m Rusayla. I write Python scripts and LLM workflows that take manual, messy work and make it repeatable.</p>
+    <p>The problems I like best are the ones a team has learned to live with, like a spreadsheet nobody trusts or a follow-up only one person remembers. I look at how the work gets done now, build the fix, and write down the new process so it sticks.</p>
+    <p>At Chargerzilla that meant Python scripts that clean and geocode address data before it goes into a SQL database. At Hoda Abayas, a small fashion brand, it meant running the Shopify site, building a vendor order-tracking system, and collecting three departments&rsquo; processes into one knowledge base.</p>
+    <p>I also like design. I&rsquo;ve helped design abayas, and I built a browser tool that turns a garment drawing into a sewing pattern.</p>
+  </div>
+  <dl class="figures">
+    <div><dt>85%</dt><dd>less manual address processing after my Python cleanup scripts at Chargerzilla (estimate)</dd></div>
+    <div><dt>3</dt><dd>departments&rsquo; processes collected into one knowledge base at Hoda Abayas</dd></div>
+    <div><dt>5</dt><dd>stages in my LLM workflow on Amazon Bedrock</dd></div>
+  </dl>
+  <h3 class="h-sub">Education</h3>
+  <p><strong>Stony Brook University</strong>, B.S. in Technological Systems Management with a Computer Science concentration. Cum Laude, Dean&rsquo;s List, Presidential Scholarship, HopperHacks finalist.</p>
+</template>
+
+<template id="tpl-experience">
+  <ol class="ledger">
+    <li>
+      <p class="ledger__when">Jan 2026 to now<br>Remote</p>
+      <div>
+        <h3>Operations and Growth Associate <span>at Chargerzilla</span></h3>
+        <ul>
+          <li>Wrote Python scripts that clean large address files with regex and log errors, cutting manual processing by an estimated 85%. Used geopy to geocode missing addresses before loading them into a SQL database.</li>
+          <li>Built a React Native prototype of an AI chat interface to help people find the app&rsquo;s features.</li>
+          <li>Researched New York State EV charging incentives for the growth team.</li>
+          <li>Ran a direct mail campaign to 4,000 homeowners to get more hosts to sign up.</li>
+        </ul>
+        <button type="button" class="aside-link" data-open="trial">Try a toy version of the address cleaner</button>
+      </div>
+    </li>
+    <li>
+      <p class="ledger__when">Feb 2025 to Jan 2026</p>
+      <div>
+        <h3>Project Manager <span>at Hoda Abayas</span></h3>
+        <ul>
+          <li>Designed and ran the brand&rsquo;s Shopify site.</li>
+          <li>Built one system for vendor messages and order tracking.</li>
+          <li>Made an internal knowledge base for customer service from three departments&rsquo; processes.</li>
+          <li>Reviewed 50+ SKUs and recommended inventory changes. Helped with abaya design and product decisions.</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p class="ledger__when">Dec 2023 to Dec 2024</p>
+      <div><h3>Substitute Paraprofessional <span>at the NYC Department of Education</span></h3></div>
+    </li>
+    <li>
+      <p class="ledger__when">Sep 2021 to Jun 2022</p>
+      <div><h3>Private Tutor, <span>self-employed</span></h3></div>
+    </li>
+  </ol>
+</template>
+
+<template id="tpl-trial">
+  <p class="note">This is a toy. At Chargerzilla I cleaned spreadsheets of hand-typed addresses with Python, regex and geocoding so they could load into a SQL database. This small version runs in your browser and only does the parsing. Type an address the way people really type them.</p>
+  <div class="trial">
+    <label for="messy">Messy address</label>
+    <input id="messy" type="text" value="  45 w 34th st. apt 5b , new york ny 10001 " autocomplete="off" spellcheck="false">
+    <div class="trial__try" role="group" aria-label="Examples">
+      <button type="button" data-example="  45 w 34th st. apt 5b , new york ny 10001 ">Midtown</button>
+      <button type="button" data-example="118 BEDFORD AVE #2 brooklyn,NY,11249">Williamsburg</button>
+      <button type="button" data-example="300   n lamar blvd ste 120 austin tx 78703">Austin</button>
+    </div>
+    <table class="trial__out" aria-live="polite">
+      <caption>Clean record</caption>
+      <tbody>
+        <tr><th scope="row">Street</th><td data-o="street"></td></tr>
+        <tr><th scope="row">Unit</th><td data-o="unit"></td></tr>
+        <tr><th scope="row">City</th><td data-o="city"></td></tr>
+        <tr><th scope="row">State</th><td data-o="state"></td></tr>
+        <tr><th scope="row">ZIP</th><td data-o="zip"></td></tr>
+      </tbody>
+    </table>
+    <p class="trial__status" data-status>Edit the address or pick an example.</p>
+  </div>
+</template>
+
+<template id="tpl-fin">
+  <p class="lead">A Python pipeline on Amazon Bedrock. It reads raw bank transactions and returns categories, KPIs and a short written summary.</p>
+  <div class="stages" role="tablist" aria-label="Pipeline stages">
+    <button type="button" role="tab" aria-selected="true" data-stage="0">Plan</button>
+    <button type="button" role="tab" aria-selected="false" data-stage="1">Categorize</button>
+    <button type="button" role="tab" aria-selected="false" data-stage="2">Compute</button>
+    <button type="button" role="tab" aria-selected="false" data-stage="3">Summarize</button>
+    <button type="button" role="tab" aria-selected="false" data-stage="4">Reflect</button>
+  </div>
+  <p class="stage-note" data-stage-note aria-live="polite">Each stage sends a structured prompt that asks for JSON in a fixed shape, so the output can go straight into an analytics pipeline.</p>
+  <figure class="fin" aria-label="Real output from the workflow">
+    <div class="fin__cols">
+      <div data-col="in">
+        <p class="fin__label">Raw transactions</p>
+        <table>
+          <thead><tr><th scope="col">Date</th><th scope="col">Merchant</th><th scope="col" class="num">Amount</th></tr></thead>
+          <tbody>
+            <tr><td>Oct 01</td><td>Starbucks</td><td class="num">6.45</td></tr>
+            <tr><td>Oct 01</td><td>Amazon</td><td class="num">32.89</td></tr>
+            <tr><td>Oct 02</td><td>Uber Eats</td><td class="num">24.10</td></tr>
+            <tr><td>Oct 03</td><td>Comcast</td><td class="num">89.99</td></tr>
+            <tr><td>Oct 03</td><td>Payroll</td><td class="num">&minus;1,800.00</td></tr>
+            <tr><td>Oct 04</td><td>Trader Joe&rsquo;s</td><td class="num">54.23</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-col="cat">
+        <p class="fin__label">Category from the model</p>
+        <ul class="fin__cats">
+          <li><span>Starbucks</span><b class="c-dining">Dining</b></li>
+          <li><span>Amazon</span><b class="c-shop">Shopping</b></li>
+          <li><span>Uber Eats</span><b class="c-dining">Dining</b></li>
+          <li><span>Comcast</span><b class="c-util">Utilities</b></li>
+          <li><span>Payroll</span><b class="c-inc">Income</b></li>
+          <li><span>Trader Joe&rsquo;s</span><b class="c-shop">Shopping</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fin__kpis" data-col="kpi">
+      <div><span>Income</span><b>$3,600.00</b></div>
+      <div><span>Spend</span><b>$1,336.68</b></div>
+      <div><span>Average expense</span><b>$34.86</b></div>
+    </div>
+    <blockquote class="fin__summary" data-col="sum">&ldquo;Your monthly income is $3,600, with total spending at $1,336.68. Average expense is $34.86&hellip; Overall, income comfortably covers spending.&rdquo;</blockquote>
+    <figcaption>One month of sample data, 34 transactions, run through the workflow.</figcaption>
+  </figure>
+  <p class="stack">Python, boto3, Pandas, JSON Schema, Jupyter</p>
+  <p class="links"><a href="https://github.com/rosura04/financial-insights" target="_blank" rel="noopener">Code on GitHub</a></p>
+</template>
+
+<template id="tpl-cd">
+  <p class="lead">A browser tool for drawing a garment in 2D and turning it into sewing-pattern pieces.</p>
+  <figure class="shot">
+    <img src="clothing-designer-app.jpg" width="1600" height="1000" alt="ClothingDesigner: a sidebar of body measurements, colour and pattern settings next to a drafting grid with an editable garment outline and two sleeves" decoding="async">
+    <figcaption>The drafting area. Drag points on the outline, or rebuild it from bust, waist and hip measurements.</figcaption>
+  </figure>
+  <p>Enter measurements or drag the outline&rsquo;s points by hand. Add layers and details, and fill the shape with a stripe or a pattern you draw or upload. Then generate front, back and sleeve pieces with seam allowance and export them as SVG.</p>
+  <div class="shot-pair">
+    <figure class="shot"><img src="clothing-designer-garment.jpg" width="1000" height="1333" alt="Garment preview: a striped indigo dress shape with sleeves on a dark background" decoding="async"><figcaption>Garment preview</figcaption></figure>
+    <figure class="shot"><img src="clothing-designer-pattern.jpg" width="1163" height="801" alt="Generated pattern pieces: front and back panels and two sleeves with stitch and cut lines" decoding="async"><figcaption>Generated pattern pieces</figcaption></figure>
+  </div>
+  <p class="stack">JavaScript, HTML Canvas, SVG. No libraries.</p>
+  <p class="links">
+    <a href="https://github.com/rosura04/ClothingDesigner" target="_blank" rel="noopener">Code on GitHub</a>
+    <a href="https://medium.com/@rusayla.hasan/i-built-a-2d-clothing-designer-that-turns-ideas-into-sewing-patterns-80cc41e380bf" target="_blank" rel="noopener">How I built it, on Medium</a>
+  </p>
+</template>
+
+<template id="tpl-workshop">
+  <div class="pair">
+    <section>
+      <h3>NutriScan</h3>
+      <p>A barcode-scanning Android app built with a team in Kotlin. I wrote the barcode API that reads a product&rsquo;s serial number and sends it to the OpenAI API for a nutrition analysis and healthier alternatives. I also ran the product side: user research, prototype testing, and a prioritized backlog.</p>
+      <p class="stack">Kotlin, Android Studio, Firebase ML Kit, OpenAI API</p>
+    </section>
+    <section>
+      <h3>Stack Overflow mockup</h3>
+      <p>I led a team building a Q&amp;A site with posts, tags, threaded comments and a reputation system. I split the work into user stories across sprints and connected the pieces with REST APIs on Node.js and Express.</p>
+      <p class="stack">Node.js, Express, REST APIs, MongoDB</p>
+    </section>
+  </div>
+  <h3 class="h-sub">Smaller repos</h3>
+  <ul class="repos">
+    <li><a href="https://github.com/rosura04/rule72" target="_blank" rel="noopener">Rule of 72 agents</a> A calculator agent, a teacher agent and a conversation manager that explain and apply the Rule of 72. Python, OpenAI.</li>
+    <li><a href="https://github.com/rosura04/zelda-games-scrape" target="_blank" rel="noopener">Game ratings scraper</a> Collects ratings and sales for a long-running adventure game series into a CSV. Python, BeautifulSoup, Pandas.</li>
+    <li><a href="https://github.com/rosura04/tiktok-clone" target="_blank" rel="noopener">TikTok clone</a> Short-video app with sign-up, posts, likes, comments and profiles. Next.js, TypeScript, Appwrite.</li>
+    <li><a href="https://github.com/rosura04/fashion-facade" target="_blank" rel="noopener">Fashion Facade</a> A website about the waste and labor behind fast fashion. HTML, CSS, JavaScript.</li>
+    <li><a href="https://github.com/rosura04/react-microbit" target="_blank" rel="noopener">RPECalc</a> Reads a CSV of rep velocity data, charts it, and estimates effort and power for a lift. React, Chart.js.</li>
+    <li><a href="https://github.com/rosura04" target="_blank" rel="noopener">Everything else on GitHub</a> Including the HopperHacks finalist project.</li>
+  </ul>
+</template>
+
+<template id="tpl-skills">
+  <dl class="skills">
+    <div><dt>AI and automation</dt><dd>LLMs, Amazon Bedrock, OpenAI API, prompt design, JSON validation, regex, process automation</dd></div>
+    <div><dt>Languages</dt><dd>Python, SQL, JavaScript, Java, Kotlin, C, OCaml, HTML and CSS</dd></div>
+    <div><dt>Data and APIs</dt><dd>Pandas, data cleaning, geopy, BeautifulSoup, MongoDB, REST APIs, Axios</dd></div>
+    <div><dt>Frameworks and tools</dt><dd>React, React Native, Node.js, Express, Flask, Vite, Three.js, Android Studio, Firebase ML Kit</dd></div>
+    <div><dt>Operations</dt><dd>Shopify, Excel, vendor tracking, knowledge bases, user research, agile sprints</dd></div>
+  </dl>
+</template>
+
+<template id="tpl-contact">
+  <p class="lead">I&rsquo;m looking for AI automation, data or ops automation, and product operations roles in New York or remote. Email is the fastest way to reach me.</p>
+  <ul class="contact-list">
+    <li><span>Email</span><a href="mailto:rusayla.hasan@gmail.com">rusayla.hasan@gmail.com</a></li>
+    <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/rusayla-h-06a342189" target="_blank" rel="noopener">in/rusayla-h</a></li>
+    <li><span>GitHub</span><a href="https://github.com/rosura04" target="_blank" rel="noopener">rosura04</a></li>
+    <li><span>Medium</span><a href="https://medium.com/@rusayla.hasan" target="_blank" rel="noopener">@rusayla.hasan</a></li>
+  </ul>
+  <a class="btn btn--go btn--lg" href="resume.pdf" download="Rusayla_Hasan_Resume.pdf">Download my resume <span class="pdf">PDF</span></a>
+</template>
+
+<article id="quick" class="quick" aria-labelledby="q-name" tabindex="-1">
+  <div class="quick__sheet">
+    <header class="q-head">
+      <div>
+        <h1 id="q-name">Rusayla Hasan</h1>
+        <p class="q-title">AI and data automation. Python, SQL and LLM workflows.</p>
+        <p class="q-where">New York. Open to remote and hybrid.</p>
+      </div>
+      <ul class="q-links">
+        <li><a href="mailto:rusayla.hasan@gmail.com">rusayla.hasan@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/rusayla-h-06a342189">LinkedIn</a> · <a href="https://github.com/rosura04">GitHub</a> · <a href="https://medium.com/@rusayla.hasan">Medium</a></li>
+        <li><a class="btn btn--ochre" href="resume.pdf" download="Rusayla_Hasan_Resume.pdf">Download resume <span class="pdf">PDF</span></a></li>
+      </ul>
+    </header>
+
+    <p class="q-summary">I write Python and LLM workflows that turn manual, messy work into repeatable processes. I&rsquo;m looking for AI automation, data or ops automation, and product operations roles.</p>
+
+    <dl class="q-figures">
+      <div><dt>85%</dt><dd>less manual address processing, estimated, from my Python scripts at Chargerzilla</dd></div>
+      <div><dt>5 stages</dt><dd>in my LLM workflow on Amazon Bedrock</dd></div>
+      <div><dt>3 departments</dt><dd>collected into one knowledge base at Hoda Abayas</dd></div>
+      <div><dt>4,000</dt><dd>homeowners in a direct mail campaign I ran</dd></div>
+    </dl>
+
+    <section class="q-sec" aria-labelledby="q-exp">
+      <h2 id="q-exp">Experience</h2>
+      <div class="q-role">
+        <p class="q-when">Jan 2026 to now, remote</p>
+        <h3>Operations and Growth Associate, <span>Chargerzilla</span></h3>
+        <ul>
+          <li>Python and regex scripts that clean large address files, with geopy geocoding before a SQL load. Cut manual processing by an estimated 85%.</li>
+          <li>React Native prototype of an AI chat interface.</li>
+          <li>Researched NY State EV charging incentives. Ran a direct mail campaign to 4,000 homeowners.</li>
+        </ul>
+      </div>
+      <div class="q-role">
+        <p class="q-when">Feb 2025 to Jan 2026</p>
+        <h3>Project Manager, <span>Hoda Abayas</span></h3>
+        <ul>
+          <li>Designed and ran the Shopify site. Built a vendor message and order-tracking system.</li>
+          <li>Built an internal knowledge base from three departments. Reviewed 50+ SKUs for inventory decisions.</li>
+        </ul>
+      </div>
+      <div class="q-role">
+        <p class="q-when">Dec 2023 to Dec 2024</p>
+        <h3>Substitute Paraprofessional, <span>NYC Department of Education</span></h3>
+      </div>
+      <div class="q-role">
+        <p class="q-when">Sep 2021 to Jun 2022</p>
+        <h3>Private Tutor, <span>self-employed</span></h3>
+      </div>
+    </section>
+
+    <section class="q-sec" aria-labelledby="q-proj">
+      <h2 id="q-proj">Projects</h2>
+      <div class="q-grid">
+        <div><h3><a href="https://github.com/rosura04/financial-insights">Agentic Financial Insights</a></h3><p>Python pipeline on Amazon Bedrock with five stages: plan, categorize, compute KPIs, summarize, reflect. Each prompt asks for JSON in a fixed shape.</p><p class="q-stack">Python, boto3, Pandas, JSON Schema</p></div>
+        <div><h3><a href="https://github.com/rosura04/ClothingDesigner">ClothingDesigner</a></h3><p>Browser tool that turns a 2D garment drawing into front, back and sleeve pattern pieces with seam allowance, exported as SVG.</p><p class="q-stack">JavaScript, Canvas, SVG</p></div>
+        <div><h3>NutriScan</h3><p>Team Kotlin app. I wrote the barcode API that sends products to OpenAI for a nutrition analysis, and ran user research and the backlog.</p><p class="q-stack">Kotlin, Firebase ML Kit, OpenAI API</p></div>
+        <div><h3>Stack Overflow mockup</h3><p>Led a team building a Q&amp;A site with tags, threaded comments and reputation over REST APIs.</p><p class="q-stack">Node.js, Express, MongoDB</p></div>
+      </div>
+    </section>
+
+    <div class="q-two">
+      <section class="q-sec" aria-labelledby="q-skills">
+        <h2 id="q-skills">Skills</h2>
+        <p><strong>AI and automation.</strong> LLMs, Amazon Bedrock, OpenAI API, prompt design, JSON validation, regex.</p>
+        <p><strong>Languages.</strong> Python, SQL, JavaScript, Java, Kotlin, C, OCaml, HTML and CSS.</p>
+        <p><strong>Data and tools.</strong> Pandas, geopy, BeautifulSoup, MongoDB, REST APIs, React, React Native, Node.js, Express, Flask, Shopify, Excel.</p>
+      </section>
+      <section class="q-sec" aria-labelledby="q-edu">
+        <h2 id="q-edu">Education</h2>
+        <p><strong>Stony Brook University</strong><br>B.S. in Technological Systems Management, Computer Science concentration</p>
+        <p class="q-stack">Cum Laude, Dean&rsquo;s List, Presidential Scholarship, HopperHacks finalist</p>
+      </section>
+    </div>
+
+    <footer class="q-foot">
+      <p>&copy; Rusayla Hasan</p>
+      <p><button type="button" class="linkbtn" data-action="map">See the map version</button></p>
+    </footer>
+  </div>
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+/* Rusayla Hasan · map portfolio. Vanilla JS, no dependencies.
+   The page works without this file: the quick view is the whole site. */
+(function () {
+  'use strict';
+  var doc = document, root = doc.documentElement;
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function (s, r) { return (r || doc).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || doc).querySelectorAll(s)); };
+  var SVGNS = 'http://www.w3.org/2000/svg';
+  function el(name, attrs, parent) {
+    var n = doc.createElementNS(SVGNS, name);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(n);
+    return n;
+  }
+
+  /* ---------------- data ---------------- */
+  // World units are pixels of the 3000 x 1800 map image. Places sit on real map spots:
+  // the floating island in the middle, the volcano, the desert, the forest and the lake.
+  var W = 3000, H = 1800, TOWER = { x: 1745, y: 905 };
+  var REGIONS = {
+    about:      { name: 'About',      lx: 1620, ly: 1040 },
+    experience: { name: 'Experience', lx: 2080, ly: 760 },
+    projects:   { name: 'Projects',   lx: 820,  ly: 1130 },
+    skills:     { name: 'Skills',     lx: 1250, ly: 300 },
+    contact:    { name: 'Contact',    lx: 2330, ly: 1640 }
+  };
+  var ORDER = ['about', 'experience', 'projects', 'skills', 'contact'];
+  // tag: the place name drawn on the map (only where a region holds several places)
+  var MARKERS = [
+    { id: 'about',      region: 'about',      x: 1600, y: 850,  title: 'About me',                     glyph: 'cube' },
+    { id: 'experience', region: 'experience', x: 2344, y: 960,  title: 'Experience',                   glyph: 'cube',    tag: 'Work history' },
+    { id: 'trial',      region: 'experience', x: 2140, y: 1190, title: 'Address cleaner, a toy demo', glyph: 'crystal', tag: 'Address cleaner', left: 1 },
+    { id: 'fin',        region: 'projects',   x: 1113, y: 905,  title: 'Agentic Financial Insights',   glyph: 'cube',    tag: 'Financial Insights' },
+    { id: 'cd',         region: 'projects',   x: 640,  y: 830,  title: 'ClothingDesigner',             glyph: 'cube',    tag: 'ClothingDesigner', left: 1 },
+    { id: 'workshop',   region: 'projects',   x: 880,  y: 1400, title: 'More projects',                glyph: 'chest',   tag: 'More projects' },
+    { id: 'skills',     region: 'skills',     x: 1598, y: 520,  title: 'Skills',                       glyph: 'cube' },
+    { id: 'contact',    region: 'contact',    x: 2600, y: 1540, title: 'Contact',                      glyph: 'cube' }
+  ];
+  var byId = {}; MARKERS.forEach(function (m) { byId[m.id] = m; });
+  // where the clouds part when a region is found: centre and radius
+  var HOLE = { about: [1620, 860, 330], experience: [2230, 1000, 640], projects: [820, 1090, 660], skills: [1600, 420, 560], contact: [2560, 1560, 400] }, HOLE_R = 360;
+
+  /* ---------------- state ---------------- */
+  var KEY = 'rh-map-v6';
+  var seen = {};
+  try { (JSON.parse(localStorage.getItem(KEY)) || []).forEach(function (r) { if (REGIONS[r]) seen[r] = 1; }); } catch (e) {}
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(Object.keys(seen))); } catch (e) {} }
+
+  var stage = $('#stage'), svg = $('#map'), world = $('#world');
+  var view = { s: 1, tx: 0, ty: 0 }, mapReady = false, touched = false;
+
+  /* ---------------- map image: a light one first, the sharp one on big screens ---------------- */
+  function loadMap() {
+    if (window.innerWidth < 900 || (navigator.connection && navigator.connection.saveData)) return;
+    var hi = new Image();
+    hi.onload = function () { $('#map-img').setAttribute('href', 'map-3000.webp'); };
+    hi.src = 'map-3000.webp';
+  }
+
+  /* ---------------- labels, markers, fog holes ---------------- */
+  var scaleNodes = [];
+  function placeMarker(parent, cls, x, y, glyph, tag, label, left) {
+    var g = el('g', { 'class': cls, tabindex: '0', role: 'button', 'aria-label': label, transform: 'translate(' + x + ' ' + y + ')' }, parent);
+    var inner = el('g', {}, g); scaleNodes.push(inner);
+    var big = glyph === 'tower', sz = big ? 40 : glyph === 'crystal' ? 28 : 34;
+    // a light pillar rises from a place once its region is found, like the beacons on the sky map
+    el('rect', { 'class': 'beam', x: -7, y: -150, width: 14, height: 150, rx: 7 }, inner);
+    el('circle', { 'class': 'hit', r: big ? 26 : 24 }, inner);
+    el('circle', { 'class': 'ring', r: big ? 24 : 22 }, inner);
+    var gl = el('g', { 'class': 'glyph' }, inner);
+    el('image', { href: '' + (big ? 'compass' : glyph) + '.webp', x: -sz / 2, y: -sz / 2, width: sz, height: sz }, gl);
+    if (tag) el('text', { 'class': 'tag', x: left ? -22 : 22, y: 5, 'text-anchor': left ? 'end' : 'start' }, inner).textContent = tag;
+    return g;
+  }
+  function buildMarkers() {
+    var labels = $('#labels'), mk = $('#markers');
+    ORDER.forEach(function (key) {
+      var R = REGIONS[key], g = el('g', { 'class': 'label', 'data-region': key, transform: 'translate(' + R.lx + ' ' + R.ly + ')' }, labels);
+      var inner = el('g', {}, g); inner.__label = true; scaleNodes.push(inner);
+      el('text', { 'class': 'name', 'text-anchor': 'middle' }, inner).textContent = R.name;
+    });
+    var tw = placeMarker(mk, 'marker tower', TOWER.x, TOWER.y, 'tower', '', 'Compass: show the whole map');
+    tw.addEventListener('click', function () { if (!dragMoved) { closeSlate(); fit(true); } });
+    tw.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fit(true); } });
+    MARKERS.forEach(function (m) {
+      var g = placeMarker(mk, 'marker' + (m.glyph === 'cube' ? '' : ' stamp'), m.x, m.y, m.glyph, m.tag, m.title + ', in the ' + REGIONS[m.region].name + ' region', m.left);
+      g.setAttribute('data-id', m.id); g.setAttribute('data-region', m.region); g.setAttribute('aria-haspopup', 'dialog');
+      g.addEventListener('click', function () { if (!dragMoved) open(m.id, g); });
+      g.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(m.id, g); } });
+      g.addEventListener('focus', function () { ensureVisible(m.x, m.y); });
+    });
+    var holes = $('#fog-holes');
+    el('circle', { id: 'tower-hole', cx: 1640, cy: 860, r: HOLE_R, fill: 'url(#g-hole)' }, holes);
+    ORDER.forEach(function (k) { el('circle', { 'data-hole': k, cx: HOLE[k][0], cy: HOLE[k][1], r: seen[k] ? HOLE[k][2] : 0, fill: 'url(#g-hole)' }, holes); });
+    // the discovery wheel: five arc segments
+    var ws = $('#wheel-segs');
+    for (var i = 0; i < 5; i++) {
+      var a0 = (-90 + i * 72 + 4) * Math.PI / 180, a1 = (-90 + (i + 1) * 72 - 4) * Math.PI / 180;
+      var d = 'M' + (20 + 15 * Math.cos(a0)).toFixed(2) + ' ' + (20 + 15 * Math.sin(a0)).toFixed(2) + 'A15 15 0 0 1 ' + (20 + 15 * Math.cos(a1)).toFixed(2) + ' ' + (20 + 15 * Math.sin(a1)).toFixed(2);
+      el('path', { d: d, 'class': 'seg-bg' }, ws); el('path', { d: d, 'class': 'seg' }, ws);
+    }
+    paintSeen();
+  }
+
+  function paintSeen() {
+    var n = Object.keys(seen).length;
+    $('#quest-n').textContent = n;
+    $$('#wheel-segs .seg').forEach(function (p, i) { p.classList.toggle('on', i < n); });
+    $$('.marker[data-region], .label[data-region]').forEach(function (m) { m.classList.toggle('seen', !!seen[m.getAttribute('data-region')]); });
+    $$('#legend-list button').forEach(function (b) { var m = byId[b.getAttribute('data-open')]; b.classList.toggle('seen', !!(m && seen[m.region])); });
+  }
+
+  function tween(dur, step, done) {
+    if (reduce || dur <= 0) { step(1); if (done) done(); return; }
+    var t0 = performance.now();
+    (function f(t) { var p = Math.max(0, Math.min(1, (t - t0) / dur)); step(1 - Math.pow(1 - p, 3)); if (p < 1) requestAnimationFrame(f); else if (done) done(); })(t0);
+  }
+
+  var toastTimer;
+  function toast(html, ms) {
+    var t = $('#toast'); t.innerHTML = html; t.hidden = false;
+    if (t.showPopover) { try { if (t.matches(':popover-open')) t.hidePopover(); t.showPopover(); } catch (e) {} }
+    requestAnimationFrame(function () { t.classList.add('show'); });
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.classList.remove('show'); setTimeout(function () { t.hidden = true; if (t.hidePopover) { try { t.hidePopover(); } catch (e) {} } }, 450); }, ms || 2600);
+  }
+
+  function discover(region) {
+    if (seen[region]) return;
+    seen[region] = 1; save(); paintSeen();
+    var hole = $('[data-hole="' + region + '"]');
+    if (hole) tween(1600, function (p) { hole.setAttribute('r', (HOLE[region][2] * p).toFixed(1)); });
+    var n = Object.keys(seen).length;
+    toast(n === 5 ? '<small>All five regions discovered</small><strong>Map complete</strong>' : '<small>Region discovered, ' + n + ' of 5</small><strong>' + REGIONS[region].name + '</strong>', n === 5 ? 3600 : 2600);
+  }
+
+  $('#fog-reset').addEventListener('click', function () {
+    seen = {}; save(); paintSeen();
+    $$('[data-hole]').forEach(function (h) { h.setAttribute('r', 0); });
+  });
+
+  /* ---------------- view: pan & zoom ---------------- */
+  function size() { var r = stage.getBoundingClientRect(); return { w: r.width, h: r.height }; }
+  function isSmall() { return window.innerWidth <= 860; }
+  function local(cx, cy) { var r = stage.getBoundingClientRect(); return [cx - r.left, cy - r.top]; }
+  function rel(sel) { var r = stage.getBoundingClientRect(), b = $(sel).getBoundingClientRect(); return { l: b.left - r.left, t: b.top - r.top, r: b.right - r.left, b: b.bottom - r.top, h: b.height }; }
+  function bounds() { // the part of the screen the map should sit in, clear of the menus
+    var s = size();
+    if (isSmall()) { var ib = rel('.intro'), lg = rel('.legend'), t2 = ib.h ? ib.b + 8 : 10; return { x: 0, y: t2, w: s.w, h: lg.t - 56 - t2 }; }
+    var left = rel('.intro').r + 20;
+    return { x: left, y: 30, w: s.w - left - 100, h: s.h - 50 };
+  }
+  function minScale() { var s = size(); return Math.min(s.w / W, s.h / H) * .8; }
+  function apply() {
+    var s = size(), cx = (s.w / 2 - view.tx) / view.s, cy = (s.h / 2 - view.ty) / view.s;
+    // keep the centre of the screen over the map
+    if (cx < 0) view.tx = s.w / 2; if (cx > W) view.tx = s.w / 2 - W * view.s;
+    if (cy < 0) view.ty = s.h / 2; if (cy > H) view.ty = s.h / 2 - H * view.s;
+    world.setAttribute('transform', 'translate(' + view.tx.toFixed(2) + ' ' + view.ty.toFixed(2) + ') scale(' + view.s.toFixed(4) + ')');
+    var k = Math.max(.8, Math.min(isSmall() ? 3.6 : 2.6, .9 / view.s)), kl = Math.max(.8, Math.min(isSmall() ? 2.8 : 2.2, .8 / view.s));
+    svg.classList.toggle('far', view.s < .3);
+    for (var i = 0; i < scaleNodes.length; i++) scaleNodes[i].setAttribute('transform', 'scale(' + (scaleNodes[i].__label ? kl : k).toFixed(3) + ')');
+  }
+  function target(wx, wy, s, sx, sy) { return { s: s, tx: sx - wx * s, ty: sy - wy * s }; }
+  function animateTo(t, dur) {
+    var a = { s: view.s, tx: view.tx, ty: view.ty };
+    tween(dur == null ? 750 : dur, function (p) {
+      // interpolate in screen space so the motion stays straight
+      view.s = a.s + (t.s - a.s) * p; view.tx = a.tx + (t.tx - a.tx) * p; view.ty = a.ty + (t.ty - a.ty) * p; apply();
+    });
+  }
+  function fitTarget() {
+    var b = bounds(), land = { x: 200, y: 110, w: 2660, h: 1620 };
+    if (isSmall()) { var s0 = Math.min(b.w / 2300, b.h / 1500); return target(1600, 960, s0, b.x + b.w / 2, b.y + b.h / 2); }
+    var s = Math.min(b.w / land.w, b.h / land.h);
+    return target(land.x + land.w / 2, land.y + land.h / 2, s, b.x + b.w / 2, b.y + b.h / 2);
+  }
+  function fit(anim) { var t = fitTarget(); if (anim) animateTo(t); else { view.s = t.s; view.tx = t.tx; view.ty = t.ty; apply(); } }
+  function zoomAt(f, sx, sy) {
+    var ns = Math.max(minScale(), Math.min(2, view.s * f));
+    view.tx = sx - (sx - view.tx) * ns / view.s; view.ty = sy - (sy - view.ty) * ns / view.s; view.s = ns; apply();
+  }
+  function ensureVisible(x, y) {
+    var s = size(), px = x * view.s + view.tx, py = y * view.s + view.ty, m = 90;
+    if (px < m || px > s.w - m || py < m || py > s.h - m) animateTo(target(x, y, view.s, s.w / 2, s.h / 2), 450);
+  }
+  function flyToMarker(m) {
+    var s = size(), z = Math.max(view.s, isSmall() ? .5 : Math.min(.9, fitTarget().s * 2.2));
+    var pl = isSmall() ? s.w : (rel('#slate').l || s.w * .45);
+    animateTo(target(m.x, m.y, z, isSmall() ? s.w / 2 : Math.max(120, pl / 2), s.h / 2 + 20));
+  }
+
+  // pointer: drag to pan, pinch to zoom; a small move still counts as a click
+  var pts = {}, dragMoved = false, startD = 0, startS = 1, last = null;
+  stage.addEventListener('pointerdown', function (e) {
+    if (e.button !== 0 && e.pointerType === 'mouse') return;
+    if (e.target.closest('.intro, .legend, .zoom')) return;
+    pts[e.pointerId] = { x: e.clientX, y: e.clientY };
+    dragMoved = false; last = { x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY };
+    var ids = Object.keys(pts);
+    if (ids.length === 2) { var a = pts[ids[0]], b = pts[ids[1]]; startD = Math.hypot(a.x - b.x, a.y - b.y); startS = view.s; }
+  });
+  window.addEventListener('pointermove', function (e) {
+    if (!pts[e.pointerId]) return;
+    pts[e.pointerId] = { x: e.clientX, y: e.clientY };
+    var ids = Object.keys(pts);
+    if (ids.length === 2) {
+      var a = pts[ids[0]], b = pts[ids[1]], d = Math.hypot(a.x - b.x, a.y - b.y), mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+      if (startD) { var lp = local(mx, my); zoomAt(startS * d / startD / view.s, lp[0], lp[1]); }
+      dragMoved = true; return;
+    }
+    if (!last) return;
+    if (!dragMoved && Math.hypot(e.clientX - last.sx, e.clientY - last.sy) < 6) return;
+    if (!dragMoved) { dragMoved = true; stage.classList.add('dragging'); try { stage.setPointerCapture(e.pointerId); } catch (x) {} }
+    view.tx += e.clientX - last.x; view.ty += e.clientY - last.y; last.x = e.clientX; last.y = e.clientY; apply(); touched = true;
+  });
+  function up(e) {
+    delete pts[e.pointerId];
+    if (!Object.keys(pts).length) { last = null; stage.classList.remove('dragging'); setTimeout(function () { dragMoved = false; }, 0); }
+  }
+  window.addEventListener('pointerup', up); window.addEventListener('pointercancel', up);
+  stage.addEventListener('wheel', function (e) {
+    if (e.target.closest('.intro, .legend')) return;
+    e.preventDefault(); touched = true;
+    var lp = local(e.clientX, e.clientY); zoomAt(Math.exp(-e.deltaY * (e.ctrlKey ? .01 : .0016)), lp[0], lp[1]);
+  }, { passive: false });
+  stage.addEventListener('keydown', function (e) {
+    if (e.target.closest('input, .intro, .legend, .zoom')) return;
+    var s = size(), step = 80;
+    switch (e.key) {
+      case 'ArrowLeft': view.tx += step; break;
+      case 'ArrowRight': view.tx -= step; break;
+      case 'ArrowUp': view.ty += step; break;
+      case 'ArrowDown': view.ty -= step; break;
+      case '+': case '=': zoomAt(1.25, s.w / 2, s.h / 2); e.preventDefault(); return;
+      case '-': case '_': zoomAt(.8, s.w / 2, s.h / 2); e.preventDefault(); return;
+      case '0': fit(true); e.preventDefault(); return;
+      case 'p': case 'P': dropPin((s.w / 2 - view.tx) / view.s, (s.h / 2 - view.ty) / view.s); e.preventDefault(); return;
+      default: return;
+    }
+    e.preventDefault(); apply();
+  });
+  $$('[data-zoom]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var s = size(), k = b.getAttribute('data-zoom');
+      if (k === 'reset') return fit(true);
+      var f = k === 'in' ? 1.35 : 1 / 1.35, ns = Math.max(minScale(), Math.min(2, view.s * f));
+      animateTo({ s: ns, tx: s.w / 2 - (s.w / 2 - view.tx) * ns / view.s, ty: s.h / 2 - (s.h / 2 - view.ty) * ns / view.s }, 300);
+    });
+  });
+  window.addEventListener('resize', function () { if (mapReady && !touched) fit(false); else if (mapReady) apply(); });
+
+  /* ---------------- first visit: the start beacon lights and the clouds part ---------------- */
+  function reveal() {
+    var hole = $('#tower-hole'), sweep = $('#sweep'), tower = $('.marker.tower'), seenIntro = false;
+    try { seenIntro = sessionStorage.getItem('rh-tower'); sessionStorage.setItem('rh-tower', '1'); } catch (e) {}
+    if (reduce || seenIntro || location.hash.length > 1) { tower.classList.add('active'); return; }
+    hole.setAttribute('r', 0);
+    setTimeout(function () {
+      tower.classList.add('active');
+      tween(2000, function (p) {
+        hole.setAttribute('r', (HOLE_R * Math.min(1, p * 2.5)).toFixed(0));
+        sweep.setAttribute('r', (20 + 2200 * p).toFixed(0)); sweep.style.opacity = (1 - p) * .9;
+      }, function () { toast('<small>Beacon lit</small><strong>Map updated</strong>', 2400); });
+    }, 700);
+  }
+
+  /* ---------------- a pin you can drop ---------------- */
+  function dropPin(x, y) {
+    var layer = $('#pin-layer'); layer.innerHTML = '';
+    var g = el('g', { 'class': 'marker pin', transform: 'translate(' + x.toFixed(1) + ' ' + y.toFixed(1) + ')' }, layer);
+    var inner = el('g', {}, g); scaleNodes.push(inner);
+    var gl = el('g', { 'class': 'glyph' }, inner);
+    el('image', { href: 'beacon.webp', x: -15, y: -15, width: 30, height: 30 }, gl);
+    apply();
+  }
+  stage.addEventListener('dblclick', function (e) {
+    if (e.target.closest('.marker:not(.pin)')) return;
+    var lp = local(e.clientX, e.clientY); dropPin((lp[0] - view.tx) / view.s, (lp[1] - view.ty) / view.s);
+  });
+
+  /* ---------------- region panel ---------------- */
+  var slate = $('#slate'), body = $('#slate-body'), current = null, lastTrigger = null;
+  function open(id, trigger) {
+    var m = byId[id]; if (!m) return;
+    if (root.classList.contains('mode-quick')) setMode('map');
+    if (!slate.open) lastTrigger = trigger || doc.activeElement;
+    current = id;
+    var R = REGIONS[m.region];
+    $('#slate-region').textContent = m.title === R.name ? '' : R.name;
+    $('#slate-region').hidden = m.title === R.name;
+    $('#slate-title').textContent = m.title;
+    body.innerHTML = ''; body.appendChild($('#tpl-' + id).content.cloneNode(true)); body.scrollTop = 0;
+    wire(body);
+    var i = MARKERS.indexOf(m), prev = MARKERS[(i - 1 + MARKERS.length) % MARKERS.length], next = MARKERS[(i + 1) % MARKERS.length];
+    $('#slate-prev .slate__navlabel').innerHTML = '<b>' + prev.title + '</b>';
+    $('#slate-next .slate__navlabel').innerHTML = '<b>' + next.title + '</b>';
+    $('#slate-prev').setAttribute('aria-label', 'Previous: ' + prev.title);
+    $('#slate-next').setAttribute('aria-label', 'Next: ' + next.title);
+    $('#slate-prev').onclick = function () { open(prev.id); };
+    $('#slate-next').onclick = function () { open(next.id); };
+    if (!slate.open) { if (slate.showModal) slate.showModal(); else slate.setAttribute('open', ''); }
+    root.classList.add('slate-open');
+    $('#slate-title').focus({ preventScroll: true });
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+    flyToMarker(m);
+    discover(m.region);
+    if (isSmall()) $('.intro').classList.add('collapsed');
+  }
+  function closeSlate() { if (slate.open) slate.close(); }
+  $('#slate-close').addEventListener('click', closeSlate);
+  slate.addEventListener('click', function (e) { if (e.target === slate) closeSlate(); });
+  slate.addEventListener('close', function () {
+    current = null; root.classList.remove('slate-open');
+    if (history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+    if (lastTrigger && lastTrigger.focus && doc.contains(lastTrigger)) lastTrigger.focus({ preventScroll: true });
+  });
+
+  function wire(scope) {
+    $$('[data-open]', scope).forEach(function (b) { b.addEventListener('click', function () { open(b.getAttribute('data-open')); }); });
+    // pipeline stages
+    var stages = $$('[data-stage]', scope);
+    if (stages.length) {
+      var NOTES = [
+        ['', 'Each stage sends a structured prompt that asks for JSON in a fixed shape, so the output can go straight into an analytics pipeline.'],
+        ['cat', 'The model gives each raw transaction a category: Dining, Shopping, Utilities or Income.'],
+        ['kpi', 'The pipeline computes KPIs from the categorized rows, including income, spend and average expense.'],
+        ['sum', 'The model writes a short summary of the month in plain English.'],
+        ['', 'In the last stage the model reviews its own output and flags what to fix.']
+      ];
+
+      var fig = $('.fin', scope), note = $('[data-stage-note]', scope);
+      stages.forEach(function (b, i) {
+        b.addEventListener('click', function () {
+          stages.forEach(function (o) { o.setAttribute('aria-selected', o === b ? 'true' : 'false'); });
+          note.textContent = NOTES[i][1];
+          fig.classList.toggle('focus', !!NOTES[i][0]);
+          $$('[data-col]', fig).forEach(function (c) { c.classList.toggle('lit', c.getAttribute('data-col') === NOTES[i][0]); });
+        });
+        b.addEventListener('keydown', function (e) {
+          var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (!d) return;
+          e.preventDefault(); var n = stages[(i + d + stages.length) % stages.length]; n.focus(); n.click();
+        });
+      });
+    }
+    // the address-cleaner trial
+    var input = $('#messy', scope);
+    if (input) {
+      var out = {}; $$('[data-o]', scope).forEach(function (td) { out[td.getAttribute('data-o')] = td; });
+      var status = $('[data-status]', scope), first = true;
+      var render = function () {
+        var r = clean(input.value);
+        Object.keys(out).forEach(function (k) {
+          var cell = out[k], val = r[k] || 'none';
+          if (cell.textContent !== val) {
+            cell.textContent = val; cell.classList.toggle('empty', !r[k]);
+            if (!first) { cell.classList.remove('flash'); void cell.offsetWidth; cell.classList.add('flash'); setTimeout(function () { cell.classList.remove('flash'); }, 650); }
+          }
+        });
+        if (!first) { status.textContent = 'Parsed. Each part of the address is in its own field.'; status.classList.add('done'); }
+        first = false;
+      };
+      input.addEventListener('input', render);
+      $$('[data-example]', scope).forEach(function (b) { b.addEventListener('click', function () { input.value = b.getAttribute('data-example'); render(); }); });
+      render();
+    }
+  }
+
+  /* ---------------- modes ---------------- */
+  var toggle = $('#mode-toggle');
+  function setMode(mode) {
+    closeSlate();
+    root.classList.toggle('mode-quick', mode === 'quick');
+    root.classList.toggle('mode-map', mode !== 'quick');
+    toggle.setAttribute('aria-pressed', mode === 'quick' ? 'true' : 'false');
+    if (history.replaceState) history.replaceState(null, '', mode === 'quick' ? '#quick' : location.pathname + location.search);
+    if (mode === 'quick') { window.scrollTo(0, 0); $('#quick').focus({ preventScroll: true }); }
+    else { initMap(); }
+  }
+  toggle.addEventListener('click', function () { setMode(root.classList.contains('mode-quick') ? 'map' : 'quick'); });
+  $$('[data-action="quick"]').forEach(function (b) { b.addEventListener('click', function () { setMode('quick'); }); });
+  $$('[data-action="map"]').forEach(function (b) { b.addEventListener('click', function () { setMode('map'); }); });
+  $$('[data-action="home"]').forEach(function (b) { b.addEventListener('click', function (e) { e.preventDefault(); setMode('map'); fit(true); }); });
+  $$('.intro [data-open], .legend [data-open]').forEach(function (b) { b.addEventListener('click', function () { open(b.getAttribute('data-open'), b); }); });
+  $('.skip').addEventListener('click', function (e) { e.preventDefault(); setMode('quick'); });
+
+  function initMap() {
+    if (mapReady) return;
+    mapReady = true;
+    buildMarkers(); fit(false); reveal(); loadMap();
+    var h = location.hash.slice(1);
+    if (byId[h]) setTimeout(function () { open(h); }, 60);
+  }
+
+  /* ---------------- address cleaner (toy) ---------------- */
+  var STATES = 'AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY'.split(' ');
+  var SUFFIX = { st: 'Street', str: 'Street', ave: 'Avenue', av: 'Avenue', rd: 'Road', blvd: 'Boulevard', dr: 'Drive', ln: 'Lane', pl: 'Place', ct: 'Court', pkwy: 'Parkway', hwy: 'Highway', sq: 'Square', ter: 'Terrace' };
+  var DIRS = { n: 'N', s: 'S', e: 'E', w: 'W', ne: 'NE', nw: 'NW', se: 'SE', sw: 'SW' };
+  var UNITS = { apt: 'Apt', apartment: 'Apt', unit: 'Unit', ste: 'Suite', suite: 'Suite', fl: 'Floor', floor: 'Floor', rm: 'Room', '#': 'Apt' };
+
+  function title(w) {
+    if (/^\d+(st|nd|rd|th)$/i.test(w)) return w.toLowerCase();
+    return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+  }
+
+  function clean(raw) {
+    var s = String(raw).replace(/\s+/g, ' ').replace(/\s*,\s*/g, ', ').trim().replace(/^,|,$/g, '').trim();
+    var r = { street: '', unit: '', city: '', state: '', zip: '' };
+    var m = s.match(/\b(\d{5})(?:-\d{4})?\s*$/);
+    if (m) { r.zip = m[1]; s = s.slice(0, m.index).replace(/[,\s]+$/, ''); }
+    m = s.match(/(?:^|[\s,])([A-Za-z]{2})\.?$/);
+    if (m && STATES.indexOf(m[1].toUpperCase()) > -1) { r.state = m[1].toUpperCase(); s = s.slice(0, m.index).replace(/[,\s]+$/, ''); }
+    var parts = s.split(',').map(function (p) { return p.trim(); }).filter(Boolean);
+    var words;
+    if (parts.length > 1) {
+      r.city = parts.pop().split(' ').map(title).join(' ');
+      words = parts.join(' ').split(' ');
+    } else {
+      words = s.split(' ');
+      // Without commas, the city is the words after the street suffix or unit.
+      var cut = -1;
+      words.forEach(function (w, i) {
+        var k = w.toLowerCase().replace(/\./g, '');
+        if (SUFFIX[k] || /^#?\d+[a-z]?$/i.test(w) && i > 1) cut = i;
+      });
+      if (cut > -1 && cut < words.length - 1) {
+        r.city = words.slice(cut + 1).map(title).join(' ');
+        words = words.slice(0, cut + 1);
+      }
+    }
+    var street = [], unit = [];
+    for (var i = 0; i < words.length; i++) {
+      var w = words[i], k = w.toLowerCase().replace(/\./g, '');
+      if (k.charAt(0) === '#' && k.length > 1) { unit = ['Apt', k.slice(1).toUpperCase()]; continue; }
+      if (UNITS[k] && words[i + 1]) { unit = [UNITS[k], words[i + 1].replace(/^#/, '').toUpperCase()]; i++; continue; }
+      if (SUFFIX[k] && street.length) { street.push(SUFFIX[k]); continue; }
+      if (DIRS[k] && street.length === 1) { street.push(DIRS[k]); continue; }
+      street.push(title(w.replace(/\.$/, '')));
+    }
+    r.street = street.join(' ');
+    r.unit = unit.join(' ');
+    return r;
+  }
+
+
+  if (root.classList.contains('mode-quick')) { toggle.setAttribute('aria-pressed', 'true'); }
+  else initMap();
+})();
+
+});
+</script>
+</body>
+</html>
